@@ -61,7 +61,7 @@ namespace Final_Programacion.Controllers
             ViewBag.CargosId = new SelectList(db.CargosSet, "Id", "Cargo");
             return View();
         }
-
+        //PROBANDO...
         // POST: Empleados/Create
         // Para protegerse de ataques de publicación excesiva, habilite las propiedades específicas a las que desea enlazarse. Para obtener 
         // más información vea https://go.microsoft.com/fwlink/?LinkId=317598.
