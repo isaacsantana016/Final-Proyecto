@@ -33,7 +33,7 @@ namespace Final_Programacion.Controllers
         }
         public ActionResult Procesos()
         {
-            var empleados = db.EmpleadosSet.Include(e => e.Departamento).Include(e => e.Cargo);
+            var empleados = db.EmpleadosSet.Include(e => e.Departamentos).Include(e => e.Cargos);
             return View(empleados.ToList());
         }
 
