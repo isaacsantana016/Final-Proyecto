@@ -33,7 +33,7 @@ namespace Final_Programacion.Controllers
         }
         public ActionResult Procesos()
         {
-            var empleados = db.EmpleadosSet.Include(e => e.Departamento).Include(e => e.Cargo);
+            var empleados = db.EmpleadosSet.Include(e => e.Departamentos).Include(e => e.Cargos);
             return View(empleados.ToList());
         }
 
@@ -61,7 +61,7 @@ namespace Final_Programacion.Controllers
             ViewBag.CargosId = new SelectList(db.CargosSet, "Id", "Cargo");
             return View();
         }
-
+        //PROBANDO...
         // POST: Empleados/Create
         // Para protegerse de ataques de publicación excesiva, habilite las propiedades específicas a las que desea enlazarse. Para obtener 
         // más información vea https://go.microsoft.com/fwlink/?LinkId=317598.
