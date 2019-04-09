@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="edc9b8f6d0df410b9bc73043e33e7ba6" Name="Diagram1" >
+        <EntityTypeShape EntityType="Model1.Empleados" Width="1.5" PointX="3.375" PointY="1.25" />
+        <EntityTypeShape EntityType="Model1.Departamentos" Width="1.5" PointX="7.625" PointY="1.125" />
+        <AssociationConnector Association="Model1.DepartamentosEmpleados" />
+        <EntityTypeShape EntityType="Model1.Cargos" Width="1.5" PointX="5.5" PointY="4.75" />
+        <AssociationConnector Association="Model1.CargosEmpleados" />
+        <EntityTypeShape EntityType="Model1.Cal_Nomina" Width="1.5" PointX="4.875" PointY="6.375" />
+        <AssociationConnector Association="Model1.EmpleadosCal_Nomina" />
+        <EntityTypeShape EntityType="Model1.Licencias" Width="1.5" PointX="3.125" PointY="5.875" />
+        <AssociationConnector Association="Model1.EmpleadosLicencias" />
+        <EntityTypeShape EntityType="Model1.Permisos" Width="1.5" PointX="9.875" PointY="1.375" />
+        <AssociationConnector Association="Model1.EmpleadosPermisos" />
+        <EntityTypeShape EntityType="Model1.Vacaciones" Width="1.5" PointX="7.75" PointY="3.375" />
+        <AssociationConnector Association="Model1.EmpleadosVacaciones" />
+        <EntityTypeShape EntityType="Model1.Salida_Empleados" Width="1.5" PointX="1.5" PointY="2.5" />
+        <AssociationConnector Association="Model1.EmpleadosSalida_Empleados" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
